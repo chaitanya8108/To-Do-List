@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: #abc9e9; */
+    background: linear-gradient(90deg, hsla(141, 54%, 86%, 1) 0%, hsla(333, 73%, 85%, 1) 50%, hsla(211, 58%, 79%, 1) 100%);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 500px;
+    /* background-color: #bcdcff; */
+    border: 1px solid rgb(28, 138, 222);
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    /* background: linear-gradient(90deg, hsla(139, 72%, 83%, 1) 0%, hsla(229, 89%, 62%, 1) 100%); */
+    background: linear-gradient(90deg, hsla(192, 80%, 51%, 1) 0%, hsla(355, 85%, 63%, 1) 100%);
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: linear-gradient(90deg, rgb(157, 144, 255) 0%, rgb(255, 203, 238) 100%);
+    padding-inline: 5rem;
+    border: 1px solid rgb(6, 90, 173);
+    border-radius: 5px;
+    box-shadow: 20px 20px 40px rgba(34, 34, 194, 0.1);
+    text-shadow: 0px 20px 40px rgba(10, 15, 91, 0.5);
+}
+
+h1:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, hsla(176, 61%, 87%, 1) 0%, hsla(150, 54%, 86%, 1) 50%, hsla(301, 68%, 84%, 1) 100%);
+}
+
+#todo-input {
+    box-shadow: 20px 20px 40px rgba(34, 34, 194, 0.1);
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 0.5rem;
+}
+
+.input-container button {
+    padding: 0.75rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.input-container button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+ul li {
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+#delBtn {
+    background: linear-gradient(90deg, hsla(334, 95%, 51%, 1) 0%, rgb(104, 9, 58) 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.25rem 0.75rem;
+    margin-left: 0.25rem;
+    cursor: pointer;
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bold;
+}
+
+#delBtn:hover {
+    background: linear-gradient(90deg, rgb(250, 71, 149) 0%, rgb(146, 25, 87) 100%);
+}
+
+#editBtn {
+    background: linear-gradient(90deg, rgb(61, 206, 231) 0%, hsla(248, 16%, 61%, 1) 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.25rem 0.75rem;
+    cursor: pointer;
+    margin-right: 0.25rem;
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bold;
+}
+
+#editBtn:hover {
+    background: linear-gradient(90deg, rgb(129, 220, 236) 0%, rgb(130, 118, 212) 100%);
+}
+
+#btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+#addBtn {
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bold;
+    background: linear-gradient(90deg, hsla(138, 82%, 69%, 1) 0%, hsla(186, 100%, 50%, 1) 100%);
+    color:black;
+}
+
+#addBtn:hover{
+    background: linear-gradient(90deg, rgb(91, 223, 208) 0%, rgb(178, 234, 255) 100%);
+}
+
+input::placeholder{
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bold;
+    
+}
+
+li {
+    overflow: auto;
+    background: linear-gradient(90deg, hsla(298, 68%, 90%, 1) 0%, hsla(30, 82%, 91%, 1) 100%);
+}
+
+input {
+    background: linear-gradient(90deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 50%, hsla(305, 75%, 83%, 1) 100%);
+}
+
+input:hover{
+    background: linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+}
